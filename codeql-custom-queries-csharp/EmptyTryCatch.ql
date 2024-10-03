@@ -13,7 +13,7 @@
  */
 
 import csharp
-tttt
+
 from CatchClause cc
 where
   cc.getBlock().isEmpty() and
