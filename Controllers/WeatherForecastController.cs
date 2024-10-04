@@ -21,7 +21,7 @@ namespace WebApiDemo.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-        // TODO
+            // TODO
             try
             {
 
@@ -39,5 +39,16 @@ namespace WebApiDemo.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("login")]
+
+        public IActionResult Login([FromBody string username, [FromBody] string password]){
+
+            if(username == "user123" && password == "12332qeq")
+            {
+                return Ok();
+    }
+            return Ok();
+}
     }
 }
