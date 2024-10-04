@@ -1,5 +1,6 @@
 name: My workflow
-on: workflow-dispatch
+on: 
+  workflow-dispatch
 
 jobs:
   first-job: 
