@@ -92,10 +92,6 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           category: '/language:${{matrix.language}}'
-      - name: Save sarif file
-        uses: actions/upload-artifact@v3
-        with:
-          name: CodeQLArtifact
-          path: ./codeql_output
+          
         
           
